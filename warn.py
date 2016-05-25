@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import rospy
+#transposed
 
 def throw():
 	rospy.init_node('warn', anonymous = True)
@@ -15,6 +16,8 @@ def throw():
 		if i % 20 == 0:
 			rospy.logfatal(str(i) + " is divisible by 20")
 	rate.sleep()
+# no python version of "ROS_DEBUG_STREAM_ONCE" or any variant
+# if you really need it you can use a variable that stores a boolean value
 
 if __name__ == "__main__":
 	try:

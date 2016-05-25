@@ -35,7 +35,7 @@
 
 ## Simple talker demo that published std_msgs/Strings messages
 ## to the 'chatter' topic
-
+# from tuts
 import rospy
 from std_msgs.msg import String
 
